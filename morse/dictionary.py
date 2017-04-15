@@ -42,3 +42,5 @@ MORSE_TO_LATIN_LOOKUP = {
 }
 
 LATIN_TO_MORSE_LOOKUP = {v: k for k, v in MORSE_TO_LATIN_LOOKUP.items()}
+
+DASH, DOT = '-', '.'

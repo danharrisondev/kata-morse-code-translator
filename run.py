@@ -2,11 +2,14 @@ from morse.text import morse_to_text, text_to_morse
 from morse.sound import play_morse
 
 def main():
-    message = text_to_morse('HELLO WORLD', separator='/')
+    message = input('msg> ')
 
-    play_morse(message)
+    morse_message = text_to_morse(message)
+    print("morse: " + morse_message)
+    play_morse(morse_message)
 
-    print(message)
+    original_message = morse_to_text(morse_message)
+    print("original: " + original_message)
 
 if __name__ == '__main__':
     main()
